@@ -1,0 +1,12 @@
+name = "Grafik theme"
+license = "CC BY 3.0"
+licenselink = "https://creativecommons.org/licenses/by/3.0/"
+description = "Boilerplate para crear plantillas Hugo"
+homepage = "harbyrobayo.com"
+tags = ['boilerplate', 'enterprise', 'hugo-templates', 'bootstrap', 'responsive']
+features = ['bootstrap','responsive']
+min_version = "0.01"
+
+[author]
+  name = "Harby Robayo"
+  homepage = "https://harbyrobayo.com/"

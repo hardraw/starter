@@ -1,0 +1,37 @@
+
+// > ----SETTING VERTICAL RYTHM
+@import "vendor/shevy/shevy";
+
+$shevy: (
+  base-font-size: 16px,
+  base-line-height: 1.5,
+  base-font-scale: (2.5, 2.1, 1.8, 1.5, 1.25, 1),
+  margin-bottom: true,
+  proximity: false,
+  proximity-factor: .85
+);
+
+@include headings;
+@include body;
+@include content;
+
+// > ----SETTING VERTICAL RYTHM END
+
+
+// CUSTOM THEME
+@import "theme/components/hero/hero-banner-1";
+@import "theme/components/cards/card-over";
+
+
+.btn {
+    padding: bs(.4) bs(2);
+    margin-bottom: bs(1);
+    background: blue;
+}
+
+
+
+
+
+
+

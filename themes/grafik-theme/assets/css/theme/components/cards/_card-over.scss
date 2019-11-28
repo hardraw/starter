@@ -1,0 +1,54 @@
+.card-over {
+    box-shadow: 0 0 20px 10px rgba(navy, .1);
+    position: relative;
+    margin-top: 5rem;
+    border-radius: 5px;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    height: auto;
+
+    &__avatar {
+        width: 100%;
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        top: 0;
+        left: 0;
+        img {
+            position: relative; 
+            top: -3rem;
+            left: 0;
+            right: 0;
+            border-radius: 50%;
+        }
+    }   
+    h3, h4 {
+        text-align: center;
+        margin: auto;
+    }
+
+    &__name {
+        color: navy;
+        position: relative;
+        top: -1.5rem;
+        font-size: 1.5rem;
+        width: 80%;
+    }
+
+    &__occupation {
+        color: silver;
+        font-weight: normal;
+        font-size: 1.1rem;
+        margin: 0;
+        position: relative;
+        top: -1.3rem;
+        width: 80%;
+
+    }
+
+    &__description {
+        padding: 0rem 2rem 2rem 2rem;
+        text-align: center;
+    }
+}

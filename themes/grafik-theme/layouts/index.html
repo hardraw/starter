@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Grafik Theme</title>
+
+
+    {{"<!-- bootstrap CSS -->"|safeHTML}}    
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    {{"<!-- Themify Icons CSS -->"|safeHTML}}    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lykmapipo/themify-icons@0.1.2/css/themify-icons.css" >
+   
+    
+    {{ $options := (dict "targetPath" "main.css" "outputStyle" "compressed" "enableSourceMap" true "includePaths" (slice "assets/lib/typey/stylesheets")) }}
+    {{ $style := resources.Get "css/main.scss" | resources.ToCSS $options }}
+    <link rel="stylesheet" href="{{ $style.RelPermalink }}" media="screen">
+    <!-- <link rel="stylesheet" href="//basehold.it/24"> -->
+
+    
+
+</head>
+<body>   
+    
+    {{ partial "components/menus/navigation-1.html" . }}
+    
+    {{ partial "components/hero/hero-banner_1.html" . }}
+
+
+    <div class="testimonials container">
+
+        <div class="row align-items-stretch">
+            <div class="col-4 d-flex align-items-stretch">
+                <div class="card-over">
+                    <div class="card-over__avatar">
+                        <img src="https://picsum.photos/seed/picsum/80/80" alt="">
+                    </div>                   
+                    <h3 class="card-over__name">
+                        Pepo Pérez
+                    </h3>
+                    <h4 class="card-over__occupation">CEO</h4>
+                    <p class="card-over__description">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus voluptatum numquam deleniti iure, cumque voluptate labore accusamus illo quas quidem explicabo, fuga atque id, eligendi nam quis adipisci nemo dicta!
+                    </p>
+                </div>
+            </div>
+
+            <div class="col-4 d-flex align-items-stretch">
+                    <div class="card-over">
+                        <div class="card-over__avatar">
+                            <img src="https://picsum.photos/seed/picsum/80/80" alt="">
+                        </div>                   
+                        <h3 class="card-over__name">
+                            Luis Rumualdo Rodríguez Pataquiva
+                        </h3>
+                        <h4 class="card-over__occupation">Jefe de Logística Transportes Betania sas</h4>
+                        <p class="card-over__description">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus voluptatum numquam deleniti iure, cumque voluptate labore accusamus illo quas quidem explicabo, fuga atque id, eligendi nam quis adipisci nemo dicta!
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-4 d-flex align-items-stretch">
+                        <div class="card-over">
+                            <div class="card-over__avatar">
+                                <img src="https://picsum.photos/seed/picsum/80/80" alt="">
+                            </div>                   
+                            <h3 class="card-over__name">
+                                Pepo Pérez
+                            </h3>
+                            <h4 class="card-over__occupation">CEO</h4>
+                            <p class="card-over__description">
+                                Lort. Natus voluptatum numquam deleniti iure, cumque voluptate labore accusamus illo quas quidem explicabo, fuga atque id, eligendi nam quis adipisci nemo dicta!
+                            </p>
+                        </div>
+                    </div>
+        </div>
+        
+
+    </div>
+
+
+    <div class="container-fluid pt-5 pb-5 bg-primary text-center">
+        <h1 class="display-4">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Est, et?</h1>
+    </div>
+    
+
+
+    <div class="section block-custom">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                        <h1>Boilerplate!!!<i class=" ti-thumb-down"></i></h1>
+
+                        <p>Lorem ipsum dolor sit, ddamet coslñjlkasdfnsectetur adipisicing elit. Explicabo, aspernatur soluta dignissimos quam natus nulla alias deleniti magni est totam nisi repudiandae. Reprehenderit dolores iusto recusandae distinctio libero? Rerum, consequatur. Voluptatum autem sed magnam in ea porro facere corporis quisquam ab, reprehenderit deleniti, ex animi labore obcaecati at corrupti laudantium nesciunt dolorum aspernatur vel. Dignissimos in repellat facere quia vitae possimus odit similique perspiciatis, enim omnis. Cumque, obcaecati voluptatum. Consequatur architecto corrupti voluptatum similique illum in soluta rem beatae doloremque, autem dolorum, eligendi amet tenetur dolorem cupiditate explicabo vero reprehenderit ea officiis enim. Dolorem at, natus ratione fugiat provident corrupti.</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, eum.</p>
+                        <button class="btn btn-primary">Enviar</button>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem, soluta, saepe facere laudantium qui illum exercitationem doloribus accusantium ut, quidem ratione harum iste aperiam maiores. Modi adipisci officia sint! Quasi!</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                    <div class="col-12">
+                        <p class="text-center">
+                                <i class=" ti-facebook"></i>
+                                <i class=" ti-twitter-alt"></i>
+                                <i class=" ti-linkedin"></i>
+                                <i class=" ti-instagram"></i>
+                        </p>
+                    </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <p class="text-center">Todos los derechos reservados. Diseño y Desarrollo: Harby Robayo. 2019</p>
+                </div>
+            </div>
+        </div>
+        
+    </footer>
+
+    {{"<!-- bootstrap JS -->"|safeHTML}}    
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    
+</body>
+</html>

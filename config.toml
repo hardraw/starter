@@ -1,0 +1,36 @@
+baseURL = "http://example.org/"
+languageCode = "en-us"
+title = "My New Hugo Site"
+
+relativeURLs = true
+uglyurls = true
+canonifyURLs = true
+
+theme = "grafik-theme"
+
+# Menu
+[menu]
+    [[menu.main]]
+    name = "Nosotros"
+    URL = "nosotros"
+    weight = 2
+
+    [[menu.main]]
+    name = "Servicios"
+    URL = "servicios"
+    weight = 3
+
+    [[menu.main]]
+    name = "Galería"
+    URL = "galeria"
+    weight = 4
+
+    [[menu.main]]
+    name = "Blog"
+    URL = "blog"
+    weight = 5
+
+    [[menu.main]]
+    name = "Contáctenos"
+    URL = "contactenos"
+    weight = 6
